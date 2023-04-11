@@ -28,5 +28,5 @@ Route::prefix('admin')->name('admin.')->middleware([
     //manggil controller yang dibuat seperti biasa
     Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
     //manggil controller yang dibuatnya pake --resource (langsung di buat crudnya)
-    Route::resource('brand', AdminBrandController::class);
+    Route::resource('brands', AdminBrandController::class);
 });
